@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>skills - Pranav G M</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                PRANAV'S<span> PORTFOLIO </span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skill.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="personaldata.html">Portfolio</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skill.html">Skills</a>
+                <a href="personaldata.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="skills-section">
+        <div class="container">
+            <div class="skills-header">
+                <h1>MY SKILLS</h1>
+                <p>Below is a list of technical and soft skills I have acquired over time.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item" data-aos="fade-up" data-aos-duration="1500">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAp1JREFUaEPtmQ1OIzEMRs1NlpPAngQ4CXASlpOwe5Ldo9AnjaXQjf8yHlAlIlVt6WTGz/5sJ+FKLnxcXbj98g3w1RE8KgI/ROReRB5P7/9E5LeIPG+fW5mPAHjaDD83FJDX0x/5vW10AtyKyIuI4H1vtIJ0AGAwhgNQGYA8bPKqzPtw7R6AUeerBmg0fq3mxyqApfO9IOX8qAJkdb4HhGpFRFIjC7Cq85QRk4sou+QHEnNHBqAqF9U1RjD4jgN43Wz9IbJL54VlNwJ4K1QXQp/RcDX5ccC1RewB0Ekpj9FYLYeA4KCob/B80zkeAMYD4Q1k8jMidH7PRsN8jgcQyccNbQEqUyAOAcDzmqgFe6eXAvHXuUk7AHWaMjcbM1lE65+o0rUDUBVmNTqSA3OInM7NNsZWAM/7yCCqKgpRWQC2AlglLVt2V/KlFQDtz9YqGe9bxms+jX0HmequrhXAqj6rAOOeQHNCncR3XixBpv1mpQ9YAFHf8Lyv5RiP322dlyiTT+yreT8cICqFnvYxDk9jrI7DJGQlMQYQhSNGaw5YN4t6gILpWv/LyiiGWHkQLc7OewiyQ/NR72iNAABeM+N35DQa9mebY3VvLZeW/NoBVvcAloGfvpjDkPN1zZ7kjUpwewTU2L17gmzim5L1Glm2rq9GorKltJYv7v8Hst5ROXGCkDlhiyrVuRTdbWt0KlF9GNHQzYtWHN6pSnqsUjlDDU86IgD1hq5Jok3+nkQe57YebI03zu6gVkHK5TkbgdGgqqwyMNGe2bzHCsAoq6iDZowPde7dZA/ACFJZmI09ZNzgZ2D/u6YDQG+q0YgWZsildIR+dAQq+bFLLjOQzgjMQNjLEpHwmHxJP6dQHgWwak953jdA2WXNEy4+Au92A7Qxa+kcSwAAAABJRU5ErkJggg=="/>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAmRJREFUaEPtmY1NAzEMhd1JgEmASYBJgEmASYBJgEmgn3SWwjWJ7eR+2uosVZS7JPee/RLb152cuO1OHL9sBNaO4BaBc4rAvYhci8hNQupy+P4tInywTxF5Tf7v8sEUEgLwyx6UgvUC+hCRh14ivQQA/54gxssRIoy/7SHRS+BJRB4HAFcDEQilMrIi8rwfwDpN1ktAwaJp5IApKS8gpEQUmmwqAjwcEMiHiERkdDQEmjy4l9tGoNVzzPNI5ct4wCIR4FS5G4B4QKeYrRNJ80FKlGtvg7w0AWb94NnE0VMlGtEcAV3DzBMWgbnBA7RGgPvVPFEjgFQs/Ua9nRtvEWAOSTIrpRqBJbyvHiYR1pxFkmTMgR0LAaKQ1lRjoGmm/3evRiBa07TICVkgDyvaxaO2RoCQRo/MCAn1qmevKdGQhH4DaADzEyiL8SigIr1E1tm1CHgIpE0JHZk3YhcDeO94fBkmYElIwwoIOjIr4wYCejC0SUIWARKMdfz1gE7nNhHAq8iiZNT/eJ36f24rZuPaHgA8JErG8ceYJQg0JTK0TS4obTQIzK19nFeUT3FnJy6vJZilCCBVTrusWdUok0p7YQkCVfCeCChrtK4NjV5jcU+5wQaMGrLJFm/jhTwRqD3cQ8DzyqQoEYv5EgQsDIv0xCUQngicFQHtcbX84O+qEbCy9dj7aUbVuasSsBqRMQGNANe1hVz15a4CiZTFY1LFht3aPJE8YK2lJUWECOe8vryy1i/e7z1GxwtTnfLhpyY1SI1/YtKOrBm4TpyaQDeg6AIbgajHph6/RWBqj0bXO/kI/AG9SIExj9AfLgAAAABJRU5ErkJggg=="/>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAi1JREFUaEPtmP1NxDAMxX2bwCTAJMAkwCRwkwCTwCbAkxqpMnb83LhXVWr+vTTxz58vd5Kdr9PO7ZcDYOsIHhHYQwReReRhI0M/ROSudzeTQlsCvInI4yjAs4g8bRSBl797cb+7mAggfRCFLdbuAZA+SKOhCNyKyPsW7p8KGIU8BHAlIl/GCTj4uwgMd8BRel1HdzA1gEN/jMPR3rreScB5TgrtCzdMRiACuGS+KgG8NA3tCzd0AMICS0TA6nRIT6RQd1UCwItWHkc24Pcb49tSAHQhbZyektXzIpQRIGcjYMmJtQFCGTEKoD1UPS/CKZwBsNJDA6BLLdVMgNddbnUAqsiYCnbmDNXl2BpY3KcHAKg5MwoQjnoCwJvCpQDeJd3HhmM8Um8uQRbLiEwRe3qIcPC/LWz3orKD2tSRE1qRWt1EEzDzg24QowC6UzDvZ90erSfrKgCWnNDGVAFQMiJbA6ycwDDTQ6knw5lz3VrLpFDmoqZM76eb4dFP533LRLYEwMpVOtSddnUxAO/RgYEz8ja2nquUjMjWQE9tzlMkgmmtFunlPYCoKVwJoDMEQOdp4gII0Wuvrl6Bt3NWAfBG/pJpHH1Da6xMF6qUExEAbRe9sSMnImOyv9NTOFsD2I9WilxGOjG5nDUeOsmbF+ZZ2QjMD0EHaZ1kBCZt9NyIEQANAyAmOs3gkv9WqwB0eC0p0dpqNq26+9cCKDWyd9gBcDFXOxcdETgiMOiBX+01hjHkJkHWAAAAAElFTkSuQmCC"/>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAj1JREFUaEPtWdFNQzEMdDeBSYBJgEmASaCTAJPAJtCTXqTIcuKzk6qN9N5XpZc4vpxzvpceZPHnsHj+sgO4NIM7Aysw8CQijxdK9Pu07mtvbaaEEODlQgDeZgAAA+87gNwOPIvIx2gJ3YvIZ2794VkPIvI1CuDmdIh/hlPJBbgVkd9RAJj/1wjSDR7MGRulH1dk3AFbRAuAS28AQKtM3fzcAVsSKCG9Q+4BCwCwlA7sooS6z7UAsHrNVABQIdBcP5C3o7dDnfe1ulgA8B5lOoUBNDLQPOvRHdaKjw1CmS4BwGLYtRFAxp6B2XZCK9jVAMDBY3oDSqMeZ8k0pXIsA6ydoBY1ijrdZ2YDoOpWAWhZFapRsgBYP0QpBwmAyo0a1LETuhqg3V5vQO3XPSBtIyIqhLGWnfBk2nqvG1TaRswAoFUHpWa5St3B6waVthFRAIxWMx1bH/S0jYgCYNo9cwEwzUacAwDTsad14SgAlupyDnAVU35DXnHHgwOsOzVTmk2xiMiotbuU5XWkKm0jogy09BolwXogC0vaRswCUJIqTcwqkzpxMHm3fSC1JJeyEVEArJ1AXIBAzZdLKbCH+1X9VdeqLvc6pUyMnAHMaV2vZDpybw6dFz1wW22WneglT33MZxlYHkD5r4DxPJmyKjcd3fvQOnC0hOq59cH0DFwPTGly3VvoVoARABoMAEEePXZ6XTnM2iwAemGAKQwVWcWHDl0aLJJzAWDXHx63AxjewsEAOwODGzg8fXkG/gFiRIoxhsI+XwAAAABJRU5ErkJggg=="/>
+                    </ul>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAi1JREFUaEPtmP1NxDAMxX2bwCTAJMAkwCRwkwCTwCbAkxqpMnb83LhXVWr+vTTxz58vd5Kdr9PO7ZcDYOsIHhHYQwReReRhI0M/ROSudzeTQlsCvInI4yjAs4g8bRSBl797cb+7mAggfRCFLdbuAZA+SKOhCNyKyPsW7p8KGIU8BHAlIl/GCTj4uwgMd8BRel1HdzA1gEN/jMPR3rreScB5TgrtCzdMRiACuGS+KgG8NA3tCzd0AMICS0TA6nRIT6RQd1UCwItWHkc24Pcb49tSAHQhbZyektXzIpQRIGcjYMmJtQFCGTEKoD1UPS/CKZwBsNJDA6BLLdVMgNddbnUAqsiYCnbmDNXl2BpY3KcHAKg5MwoQjnoCwJvCpQDeJd3HhmM8Um8uQRbLiEwRe3qIcPC/LWz3orKD2tSRE1qRWt1EEzDzg24QowC6UzDvZ90erSfrKgCWnNDGVAFQMiJbA6ycwDDTQ6knw5lz3VrLpFDmoqZM76eb4dFP533LRLYEwMpVOtSddnUxAO/RgYEz8ja2nquUjMjWQE9tzlMkgmmtFunlPYCoKVwJoDMEQOdp4gII0Wuvrl6Bt3NWAfBG/pJpHH1Da6xMF6qUExEAbRe9sSMnImOyv9NTOFsD2I9WilxGOjG5nDUeOsmbF+ZZ2QjMD0EHaZ1kBCZt9NyIEQANAyAmOs3gkv9WqwB0eC0p0dpqNq26+9cCKDWyd9gBcDFXOxcdETgiMOiBX+01hjHkJkHWAAAAAElFTkSuQmCC"/>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAj1JREFUaEPtWdFNQzEMdDeBSYBJgEmASaCTAJPAJtCTXqTIcuKzk6qN9N5XpZc4vpxzvpceZPHnsHj+sgO4NIM7Aysw8CQijxdK9Pu07mtvbaaEEODlQgDeZgAAA+87gNwOPIvIx2gJ3YvIZ2794VkPIvI1CuDmdIh/hlPJBbgVkd9RAJj/1wjSDR7MGRulH1dk3AFbRAuAS28AQKtM3fzcAVsSKCG9Q+4BCwCwlA7sooS6z7UAsHrNVABQIdBcP5C3o7dDnfe1ulgA8B5lOoUBNDLQPOvRHdaKjw1CmS4BwGLYtRFAxp6B2XZCK9jVAMDBY3oDSqMeZ8k0pXIsA6ydoBY1ijrdZ2YDoOpWAWhZFapRsgBYP0QpBwmAyo0a1LETuhqg3V5vQO3XPSBtIyIqhLGWnfBk2nqvG1TaRswAoFUHpWa5St3B6waVthFRAIxWMx1bH/S0jYgCYNo9cwEwzUacAwDTsad14SgAlupyDnAVU35DXnHHgwOsOzVTmk2xiMiotbuU5XWkKm0jogy09BolwXogC0vaRswCUJIqTcwqkzpxMHm3fSC1JJeyEVEArJ1AXIBAzZdLKbCH+1X9VdeqLvc6pUyMnAHMaV2vZDpybw6dFz1wW22WneglT33MZxlYHkD5r4DxPJmyKjcd3fvQOnC0hOq59cH0DFwPTGly3VvoVoARABoMAEEePXZ6XTnM2iwAemGAKQwVWcWHDl0aLJJzAWDXHx63AxjewsEAOwODGzg8fXkG/gFiRIoxhsI+XwAAAABJRU5ErkJggg=="/>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAatJREFUaEPtmetNA0EMhJ1KgEqATqASoBKgEugEqATySWfJspzVbbR75wjvnyiXfcx4xvbqcpALH4cLxy9FYG8FS4HMCvzuDc6dH7qlZaEiMFjBUmBwQLu3KwW6QzZ4QSkwOKDd25UC3SEbvKAUGBzQ7u1Kge6QDV5QCvQG9E1EfpZFtyJy5zb4FpF3EeGTcS0iV8fvDycO2lyB+yPozwUMoF4NMEDfnAAKUeZCyI5UBACvkY94AP4rKwGs9WjAoQ4Ww27PS+R59pSVwMsCVH1vIw259DngCXwEfo9slSYHSGwSXAd+jyzjSaQhQPKSA1qh1hJJQwDAkMBKeN4PFIlslYqAgoYAzSxSg15gm19KAi0igEcJHakJKEhyw9rKvh2cSsDeZxSM7bb2KqF3IOb5ZuWb3CYEtK7b5POlEj9DwgOk8yqJqDpNJxDVdK0ytrrQbSHYusT5amTJ8ds0C9nOGnVQDwQSNLLWZc4n8FQCbB6Vw1aH1TxAQVtCW2umKWCjHiVzpMo5zzYhcA6wtWv+H4G1kdl1Xv3Numv4TzWHvUH1nF8W6onWjLl/hMt+Mb0UdEAAAAAASUVORK5CYII="/>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABE1JREFUaEPtmT2vTUEYhZdEIoJEoVBIEI2CRCshaDQUCmr8ABS0giiR+PgBqERoFBLRIFEoFBIKjVBIKJQEFfeRWfLeubP37Nknh3OTO8nJveec+Vjr/VrvnrNMi3wsW+T4tUTgf3twUg/sTQQ+SOLVOlg/du2fs8YS4OCbkjYFxE8lHR9AhLVH5+Ydy9iy9larBcYQAMCTBPRCIrEn/YUQIPi85BFIGzjznqV1EGLtPkkYYvAYQwDwHIbF4mF8di4BBDxgTMKkAVbyFGttFNYNHq0EOOh9sjIESgMLQ8QWZQ7gGH0Wtnc2DwjDv+e2ErAlCZHzPWbKcwRP5B7Ll0McEk1hNJbAkIQzIIDWCDNnpgg41D5KWi5pvaRaaMwMASekc8Bl0znQpReEJLkz1RACBEnsSlJKAxIW0DFsDG5IiW0K66bJCS0EXCZNAGsD+pSkHZJeSXqQseN79OK5pLOh0tgj7Msg1AaPMQTuSTqcSimgohoPPjhMtJaw1+2CQvfuOZQAIEkyK2bc1PJ/UNK6TMDyw9nnjqQfCWxUcM/FIxCBWFWVawSiunIAmxMahMoLSTvTqY7xIeXSc2Mpdt5gjOjVvpz5c3QfAR/EPDayVXjvA90uOC/y+F2dCH7NXOF49/pfmbrb41Qle6QonF0ELOt5T2McUZH5jIOi9bdJuiJpf1rwWNLpudx5U/CY15fEMZbkondLBCwoxF9XYxWFakOykq2/KgHNkxtjQOxbqGbMQezYo8uY0RsLSJYWOTxq+RFDLIrPSUnXOkoHuXM9fRc7VEK0qzlkug22wKglkMRjn/WN7YykS5KI7zUBMOAhURqAh4THp9RmDFFft/Hz8qzLAzCuCUp8OIl9zolg5ZwExG6M8ABL8kTvrELOAWK2jwQbMqykrigrJb2WtCVD/07SdknfsxzA2zWDxao3Txu64tzx3dXHmyRxixjxPlaJrZIuSzqQwD6cCzVC7m1PFSqFEcTwNPlSzJNJdcAeik9csdtckQD/DN5wQtrDpQTNBbRTIGuVJpYwh8vL1Avdl3SkYNG+JzWml9pmhwh70md5TKTEMYRNhHDxXZC/Jyax5iFJayXtTrW9VIUsTIQSrYj3ipph5QV89a6p5oESiKupFDr5mDNJR8o+XwpeLZ294LMxBEr1GAK8Lkrale57ALYxnOgm7ZGku0lrooVLzxlVEq0Ehlyr9D2R9QnkP7lWMYFa24w183uhmq7MzEO9c8Kh5jCotQszRQDQTnb+b7lHqhGdlxetOeAOsgYodpqf0yNkvCstJefMXKvEGzlAW1X520fcBJqM2jQ5mc1VJr9pi31L3kPFu9KSuubtRbV8esIYAlZT9uA5GbDcVlhVh5RK1jKP3wcY//T3Afcz+RVL/uDfZUWI8gydtyRNyTuJByKwSX/jmnT96N/IBsfotCeOyYFpY2raf4lAk7mmMHnJA1MwatOWi94DvwH85DtA+o+kPwAAAABJRU5ErkJggg=="/>
+                    </ul>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                    <h3>Embedded Systems</h3>
+                    <ul>
+                        <li>Arduino</li>
+                        <li>Raspberry Pi</li>
+                        <li>Cisco Networking</li>
+                    </ul>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>MATLAB</li>
+                        <li>Tinkercad / Wokwi</li>
+                        <li>Microsoft 365</li>
+                    </ul>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Motivated</li>
+                        <li>Versatile</li>
+                        <li>Team-Oriented</li>
+                    </ul>
+                </div>
+            </div>
+        </div><br><br>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

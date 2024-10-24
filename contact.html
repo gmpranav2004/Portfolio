@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Contact - Pranav G M</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                PRANAV'S<span> PORTFOLIO </span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skill.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="personaldata.html">Portfolio</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skill.html">Skills</a>
+                <a href="personaldata.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <h1 data-aos="fade-right" data-aos-duration="1500">GET IN Touch</h1>
+                <form class="contact-form" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400" action="mailto:your.email@example.com" method="POST" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="2" required></textarea>
+                    </div>
+                    <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">
+                        <button type="submit"><a href="thankyou.html">Send Message</button></a>
+                    </div>
+                </form>
+                <div class="social-links" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="700">
+                    <h2 data-aos="fade-right" data-aos-duration="1500">Connect with me:</h2>
+                    <a href="https://github.com/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://in.linkedin.com/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1100"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://web.telegram.org/k/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://web.whatsapp.com/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://mail.google.com/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-google"></i></a>
+                </div>
+            </div>
+        </div><br><br>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset: 0});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio - Pranav G M</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                PRANAV'S<span> PORTFOLIO </span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skill.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="personaldata.html">Portfolio</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skill.html">Skills</a>
+                <a href="personaldata.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="portfolio-container">
+            <h1 class="section-title" data-aos="fade-down" data-aos-duration="1500">My Projects</h1>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-duration="1500">
+                    <img src="edge.png" alt="Project 1" class="portfolio-img">
+                    <div class="portfolio-content">
+                        <h3>Image Edge Detection in Cloud Application Development</h3>
+                        <p>Developed a cloud-based application for real-time image edge detection using Python, leveraging advanced algorithms for efficient processing and visualization.</p>
+                        <a href="https://gmpranav2004.github.io/pranav.gm2004/" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
+                    <img src="color.png" alt="Project 2" class="portfolio-img">
+                    <div class="portfolio-content">
+                        <h3>Color Based Product Sorting</h3>
+                        <p>Developed an Arduino-based color detection and sorting system that automates product classification by analyzing color variations for efficient processing.</p>
+                        <a href="https://gmpranav2004.github.io/color-based-product-sorting/" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+                    <img src="briyani.png" alt="Project 3" class="portfolio-img">
+                    <div class="portfolio-content">
+                        <h3>Web Page Clone of Khalids Briyani</h3>
+                        <p>Developed a responsive web page clone for Khalid's Briyani using HTML, CSS, and JavaScript, focusing on user interface design and interactive features.</p>
+                        <a href="https://gmpranav2004.github.io/khalids-biriyani/" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h1 class="section-title" data-aos="fade-down" data-aos-duration="1500">Internships</h1>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-duration="1500"data-aos-delay="200">
+                    <img src="nlc.png" alt="Internship 1" class="portfolio-img">
+                    <div class="portfolio-content">
+                        <h3>NLC Telecommunication Internship</h3>
+                        <p>completed a telecommunication internship at NLC, gaining practical experience in modern communication systems and their applications in-an industrial setting.</p>
+                        <a href="https://drive.google.com/file/d/1ku2r4e86VtENP5EnC2t84YSmllVx2KoS/view?usp=sharing" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-duration="1500"data-aos-delay="400">
+                    <img src="nctps.png" alt="Internship 2" class="portfolio-img">
+                    <div class="portfolio-content">
+                        <h3>NCTPS Internship</h3>
+                        <p>Worked in multiple departments including Boiler, Turbine, Generator, C&I, and MRT, gaining hands-on experience in power plant operations and maintenance.</p>
+                        <a href="https://drive.google.com/file/d/1kibC1gCYbprpO2OIZwU7Rn_e3zA15Q1H/view?usp=sharing" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h1 class="section-title" data-aos="fade-down" data-aos-duration="1500">Workshops</h1>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-duration="1500"data-aos-delay="200">
+                    <img src="datascience.png" alt="Workshop 1" class="portfolio-img">
+                    <div class="portfolio-content">
+                        <h3>Introduction to Data Science</h3>
+                        <p>Attended a workshop on Data Science, coverindg essential concepts and practical applications in data analysis and machine learning.</p>
+                        <a href="https://drive.google.com/file/d/1kjQEeDNHKdRUSdbS1VKk6l0_P8pSk6Y-/view?usp=sharing" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-duration="1500"data-aos-delay="400">
+                    <img src="ios.png" alt="Workshop 2" class="portfolio-img">
+                    <div class="portfolio-content">
+                        <h3>IOS App Development</h3>
+                        <p>Attended a workshop on IOS App Development, covering swift programming, UI/UX design and app deployment processes.</p>
+                        <a href="https://drive.google.com/file/d/131VLM35OI1F-t7J9O21L2uyLRPXBJVs3/view?usp=sharing" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-duration="1500"data-aos-delay="600">
+                    <img src="matlab.png" alt="Workshop 3" class="portfolio-img">
+                    <div class="portfolio-content">
+                        <h3>MATLAB and Code Challange</h3>
+                        <p>Attended a workshop on MATLAB and code challange, gaining hands-on experience in problem-solving and MATLAB programming.</p>
+                        <a href="https://drive.google.com/file/d/1eoUn8DN8D9yit48IQp31iRx4KdBb0z7u/view?usp=sharing" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset: 0});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
